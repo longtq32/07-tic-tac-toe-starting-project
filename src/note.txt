@@ -1,0 +1,30 @@
+Phương thức map() trong JavaScript có cấu trúc chung như sau:
+
+javascript
+Copy code
+
+array.map(callback(currentValue[, index[, array]])[, thisArg])
+
+array: Mảng gốc mà bạn muốn thực thi map() lên.
+callback: Một hàm được gọi cho mỗi phần tử của mảng, nhận ba tham số:
+currentValue: Giá trị của phần tử hiện tại đang được xử lý.
+index (Tùy chọn): Chỉ số của phần tử hiện tại.
+array (Tùy chọn): Mảng gốc mà map() được gọi.
+thisArg (Tùy chọn): Một giá trị để sử dụng làm "this" khi thực thi hàm callback.
+Phương thức map() sẽ trả về một mảng mới chứa các giá trị đã được xử lý bởi hàm callback.
+
+Ví dụ sử dụng cấu trúc chung của map():
+
+javascript
+Copy code
+const array = [1, 2, 3, 4, 5];
+const newArray = array.map((currentValue, index, array) => {
+  // Xử lý currentValue
+  return processedValue; // Trả về giá trị mới được xử lý
+});
+Trong ví dụ này, mỗi phần tử currentValue của mảng array được xử lý bởi hàm callback, và kết quả của từng phần tử được đưa vào một mảng mới được gán cho newArray.
+
+
+
+
+
